@@ -1,6 +1,6 @@
 <h1 align="center"> Currency code </h1>
 <p align="center">
- <img src= "src/resourcesConversor/c1.png" alt="logo" > 
+ <img src= "resourcesConversor/logochallenge2.png" alt="logo" > 
 </p>
 <h4 align="center">Ángel Vázquez</h4>
 
@@ -48,6 +48,7 @@
 ## Descripción
 El conversor proporciona los tipos de cambio de diversas monedas y un historial de operaciones realizadas, incluyendo sus fechas y horas, mediante conexión con una API.
 
+Los archivos Principal.java y AtributosConversion.java están en .gitignore para proteger contraseñas y claves de API. Esto ayuda a mantener la seguridad del proyecto y previene accesos no autorizados a información sensible.
 ### Objetivo ✅
 El objetivo de este proyecto fue aprender a utilizar API's y manejar los datos obtenidos según la búsqueda del usuario, para luego mostrarlos en la consola.
 
@@ -76,19 +77,19 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 
 - Para empezar a usar la aplicación, presione el botón de "Ejecutar" ▶. En la consola de la aplicación aparecerá el menú. Cada opción tiene vinculado un número. Escriba el número de la opción que desea usar y presione Enter.
 
-![Iniciar la aplicacion](src/resourcesConversor/showMenu.gif)
+![Puedes encontrar el GIF llamado "showMenu" en la carpeta "recursos" de este repositorio.](resourcesConversor/showMenu.gif)
 
 - Se habilitará la opción que seleccionó. Ahora puede escribir una cantidad en la moneda de origen, y se mostrará su equivalente en la moneda de destino. Puede seleccionar otra opción o la misma y continuar haciendo conversiones de divisas. En el siguiente ejemplo, se muestran conversiones de dólares.
 
-![conversiones](src/resourcesConversor/useDollars.gif)
+![Puedes encontrar el GIF llamado "useDollars" en la carpeta "recursos" de este repositorio.](resourcesConversor/useDollars.gif)
 
 - Puede acceder al historial de conversiones que acaba de realizar presionando "13".
 
-![Como ver el historial de conversiones](src/resourcesConversor/showHistory.gif)
+![Puedes encontrar el GIF llamado "showHistory" en la carpeta "recursos" de este repositorio.](resourcesConversor/showHistory.gif)
 
 - Para cerrar sesión, presione "14".
 
-![salir](src/resourcesConversor/salirOfApp.gif)
+![Puedes encontrar el GIF llamado "salirOfApp" en la carpeta "recursos" de este repositorio.](resourcesConversor/salirOfApp.gif)
 
 ## Funcionalidades
 | Nombre              | Función                                                                                                                               |
@@ -112,19 +113,19 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 
 - Para convertir dólares a otro tipo de moneda, presione 1, 2 o 3.
 
-![conversiones de dolares](src/resourcesConversor/useDollars.gif)
+![Puedes encontrar el GIF llamado "useDollars" en la carpeta "recursos" de este repositorio.](resourcesConversor/useDollars.gif)
 
 - Para convertir reales brasileños a otro tipo de moneda, presione 4, 5 o 6.
 
-![conversiones de reales brasileños](src/resourcesConversor/useReales.gif)
+![Puedes encontrar el GIF llamado "useReales" en la carpeta "recursos" de este repositorio.](resourcesConversor/useReales.gif)
 
 - Para convertir pesos argentinos a otro tipo de moneda, presione 7, 8 o 9.
 
-![conversiones de pesos argentinos](src/resourcesConversor/useArgentine.gif)
+![Puedes encontrar el GIF llamado "useArgentine" en la carpeta "recursos" de este repositorio.](resourcesConversor/useArgentine.gif)
 
 - Para convertir pesos colombianos a otro tipo de moneda, presione 10, 11 o 12.
 
-![conversiones de pesos colombianos](src/resourcesConversor/useColombian.gif)
+![Puedes encontrar el GIF llamado "useColombian" en la carpeta "recursos" de este repositorio.](resourcesConversor/useColombian.gif)
 
 ## Estructura del proyecto y archivos
 - paquete principal: Contiene las clases relacionadas con el manejo de entrada y salida, escritura y lectura de datos, control de excepciones, zonas horarias, clases de utilidad, entre otras. Estas clases permiten procesar, imprimir y almacenar una serie de datos a partir de un número ingresado.
@@ -198,15 +199,16 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 
 ## Historial de conversiones y registros con marca de tiempo y fecha (extra) 📆 🕒
 - El historial de conversiones incluye la fecha y hora en GMT-4, almacenando los datos en una lista y en archivos JSON y TXT para referencia futura."
-![Como ver el historial de conversiones](src/resourcesConversor/showHistory.gif)
+![Puedes encontrar el GIF llamado "showHistory" en la carpeta "recursos" de este repositorio.](resourcesConversor/showHistory.gif)
 
 ## Manejo de excepciones
 La aplicación funciona ingresando datos numéricos para su conversión y así mostrar cantidades con sus respectivos tipos de cambio. Cuando, por ejemplo, se ingresan letras, ya sea al elegir una opción del menú o al escribir una cantidad que represente una moneda, el código trata estas excepciones y vuelve a mostrar el menú para permitir la entrada de datos correctos. La aplicación maneja errores en la entrada de datos no numéricos, permitiendo reintentar con datos correctos para realizar la conversión.
 - Control de Errores: A continuación, se describen algunas de las estrategias de manejo de errores que se han implementado:
 - Validación de entrada del usuario: Se han implementado controles de validación en las entradas del usuario para garantizar que solo se introduzcan valores válidos. Se validan las entradas del usuario y se emite un mensaje de error si no se ingresan números válidos.
 - Captura de excepciones: Se han implementado bloques try-catch para capturar excepciones y manejarlas adecuadamente.
-- ![Excepcion](src/resourcesConversor/letterInAmountMoney.gif)
-- ![Excepcion](src/resourcesConversor/letterInOptionMenu.gif)
+
+![Puedes encontrar el GIF llamado "letterInAmountMoney" en la carpeta "recursos" de este repositorio.](resourcesConversor/letterInAmountMoney.gif)
+![Puedes encontrar el GIF llamado "letterInOptionMenu" en la carpeta "recursos" de este repositorio.](resourcesConversor/letterInOptionMenu.gif)
 
 ## Compatibilidad
 - JRE
@@ -249,7 +251,7 @@ La aplicación funciona ingresando datos numéricos para su conversión y así m
 ## Consideraciones
 - El conversor solo funciona ingresando números, tanto para elegir opciones del menú como para convertir monedas.
 - Puede consultar la documentación de Java en: https://docs.oracle.com/en/java/
-
+- Si no puede acceder a imágenes, videos y otros archivos o al mismo proyecto, es probable que esté en mantenimiento.
 ## Desarrolladores y contacto
 [Ángel Vázquez](https://github.com/AngelVazquezV/)
 - Inicia sesión en [Discord](Discord.com) y accede a [este perfil](https://discordapp.com/users/1250691927674978350)
