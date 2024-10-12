@@ -1,10 +1,8 @@
 <h1 align="center"> Currency code </h1>
-*put img and gif and explicacion austera*
 <p align="center">
- <img src= "readme/banner.png" alt="logo del proyecto" ></img> 
+ <img src= "resourcesConversor/c1.png" alt="logo" > 
 </p>
-
-####Ángel Vázquez
+<h4 align="center">Ángel Vázquez</h4>
 
 ![Java](https://img.shields.io/badge/Programa-%20Java-blue)
 ![Desarrollo](https://img.shields.io/badge/desarrollo-%20En_construccion-green)
@@ -18,6 +16,8 @@
 
 ### Índice
 - [Descripción](#descripcion)
+
+- [Video del proyecto](#video)
 
 - [Cómo usar la aplicación](#como-usar-la-aplicacion)
 
@@ -51,6 +51,8 @@ El conversor proporciona los tipos de cambio de diversas monedas y un historial 
 ### Objetivo ✅
 El objetivo de este proyecto fue aprender a utilizar API's y manejar los datos obtenidos según la búsqueda del usuario, para luego mostrarlos en la consola.
 
+## Video
+- Video del proyecto [Aqui](https://1drv.ms/v/c/8cd888ee64cb1752/ES01nXv1ys9Mjq_qSzJCQXAB8036Dg7MS2Iu539j_hPZ6Q?e=3BqEE8)
 ## Cómo usar la aplicación
 Configuración⚙ En este proyecto trabajamos con API's y la librería Gson para obtener, procesar y mostrar los datos solicitados.
 
@@ -73,19 +75,19 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 |Selecciona una versión y haz clic en "Download JAR". |Ve a la sección "Libraries", busca el archivo JAR de Gson y agrégalo al proyecto. |
 
 - Para empezar a usar la aplicación, presione el botón de "Ejecutar" ▶. En la consola de la aplicación aparecerá el menú. Cada opción tiene vinculado un número. Escriba el número de la opción que desea usar y presione Enter.
-![ejecutar la app y mostrar el menu](<readme/textEncriptado.png>)
+![Iniciar la aplicacion](resourcesConversor/showMenu.gif)
 
-- Se habilitará la opción que seleccionó. Ahora puede escribir una cantidad en la moneda de origen, y se mostrará su equivalente en la moneda de destino.
-![consola after choose option menu y ya escrita una amount for convertirla a su respectivo tipo d cambio en otra moneda](<readme/textcopiado.png>)
+- Se habilitará la opción que seleccionó. Ahora puede escribir una cantidad en la moneda de origen, y se mostrará su equivalente en la moneda de destino. Puede seleccionar otra opción o la misma y continuar haciendo conversiones de divisas. En el siguiente ejemplo, se muestran conversiones de dólares.
 
-- Puede seleccionar otra opción o la misma y continuar haciendo conversiones de divisas.
-![continuar doing other conversion una vez hecha una otra conversion diferente](<readme/textdecrypted.png>)
+![conversiones](resourcesConversor/useDollars.gif)
 
 - Puede acceder al historial de conversiones que acaba de realizar presionando "13".
 
+![Como ver el historial de conversiones](resourcesConversor/showHistory.gif)
+
 - Para cerrar sesión, presione "14".
 
-  ![show history currency](<readme/textdecrypted.png>
+![salir](resourcesConversor/salirOfApp.gif)
 
 ## Funcionalidades
 | Nombre              | Función                                                                                                                               |
@@ -106,22 +108,22 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 |_consumo de api_| Los datos que solicita el usuario son obtenidos a través de la API de Exchange Rate.                                                  |
 |_datos en formato json_| Una vez obtenidos los datos solicitados por el usuario, la biblioteca Gson procesa estos datos para su mejor lectura y visualización. |
 
-<br>
+
 - Para convertir dólares a otro tipo de moneda, presione 1, 2 o 3.
 
-![tipos d conversion dicho en el renglon anterior](readme/encriptar.png)
+![conversiones de dolares](resourcesConversor/useDollars.gif)
 
 - Para convertir reales brasileños a otro tipo de moneda, presione 4, 5 o 6.
 
-![tipos d conversion dicho en el renglon anterior](<readme/howlisten.png>)
+![conversiones de reales brasileños](resourcesConversor/useReales.gif)
 
 - Para convertir pesos argentinos a otro tipo de moneda, presione 7, 8 o 9.
 
-![tipos d conversion dicho en el renglon anterior](readme/instructions.png)
+![conversiones de pesos argentinos](resourcesConversor/useArgentine.gif)
 
 - Para convertir pesos colombianos a otro tipo de moneda, presione 10, 11 o 12.
 
-![tipos d conversion dicho en el renglon anterior](<readme/toenglish.png>)
+![conversiones de pesos colombianos](resourcesConversor/useColombian.gif)
 
 ## Estructura del proyecto y archivos
 - paquete principal: Contiene las clases relacionadas con el manejo de entrada y salida, escritura y lectura de datos, control de excepciones, zonas horarias, clases de utilidad, entre otras. Estas clases permiten procesar, imprimir y almacenar una serie de datos a partir de un número ingresado.
@@ -195,14 +197,15 @@ El proyecto fue desarrollado en un entorno de desarrollo integrado (IDE). Utiliz
 
 ## Historial de conversiones y registros con marca de tiempo y fecha (extra) 📆 🕒
 - El historial de conversiones incluye la fecha y hora en GMT-4, almacenando los datos en una lista y en archivos JSON y TXT para referencia futura."
-![video mostrando un historial de conversiones y archivos json y txt](<readme/toenglish.png>)
+![Como ver el historial de conversiones](resourcesConversor/showHistory.gif)
 
 ## Manejo de excepciones
 La aplicación funciona ingresando datos numéricos para su conversión y así mostrar cantidades con sus respectivos tipos de cambio. Cuando, por ejemplo, se ingresan letras, ya sea al elegir una opción del menú o al escribir una cantidad que represente una moneda, el código trata estas excepciones y vuelve a mostrar el menú para permitir la entrada de datos correctos. La aplicación maneja errores en la entrada de datos no numéricos, permitiendo reintentar con datos correctos para realizar la conversión.
 - Control de Errores: A continuación, se describen algunas de las estrategias de manejo de errores que se han implementado:
 - Validación de entrada del usuario: Se han implementado controles de validación en las entradas del usuario para garantizar que solo se introduzcan valores válidos. Se validan las entradas del usuario y se emite un mensaje de error si no se ingresan números válidos.
 - Captura de excepciones: Se han implementado bloques try-catch para capturar excepciones y manejarlas adecuadamente.
-- ![video mostrando tratamiento d excepciones](<readme/toenglish.png>)
+- ![Excepcion](resourcesConversor/letterInAmountMoney.gif)
+- ![Excepcion](resourcesConversor/letterInOptionMenu.gif)
 
 ## Compatibilidad
 - JRE
@@ -216,7 +219,6 @@ La aplicación funciona ingresando datos numéricos para su conversión y así m
 - Archivo .txt
 - Archivos .json
 - API's
-- ![herrameintas utilizadas](readme/image.png)
 
 ## Licencia
 - Este proyecto tiene licencia CC BY-NC-SA
@@ -249,6 +251,5 @@ La aplicación funciona ingresando datos numéricos para su conversión y así m
 
 ## Desarrolladores y contacto
 [Ángel Vázquez](https://github.com/AngelVazquezV/)
-- Inicia sesión en Discord [Discord](Discord.com) y accede a este perfil de [Discord](https://discordapp.com/users/1250691927674978350)
-
+- Inicia sesión en [Discord](Discord.com) y accede a [este perfil](https://discordapp.com/users/1250691927674978350)
 #### Hecho por Ángel Vázquez
